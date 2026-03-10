@@ -14,6 +14,10 @@ window.onload = function() {
   ctx.strokeStyle = "orange";
   ctx.lineWidth = 3;
   ctx.stroke();
+
+  // Ground 
+  ctx.fillStyle = "green";
+  ctx.fillRect(0, 400, 800, 100);
 }
 
 
