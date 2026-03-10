@@ -63,6 +63,11 @@ window.onload = function() {
 
     ctx.restore();
 }
+
+  // Captions
+  ctx.fillStyle = "black";
+  ctx.font = "bold 20px Arial";
+  ctx.fillText("A Beautiful Day!", 300, 470);
 }
 
 
