@@ -18,6 +18,31 @@ window.onload = function() {
   // Ground 
   ctx.fillStyle = "green";
   ctx.fillRect(0, 400, 800, 100);
+
+  // House
+  ctx.fillStyle = "red";
+  ctx.fillRect(300, 250, 200, 150);
+
+  //Roof of house
+  ctx.beginPath();
+  ctx.moveTo(280, 250);
+  ctx.lineTo(400, 150);
+  ctx.lineTo(520, 250);
+  ctx.closePath();
+  ctx.fillStyle = "darkred";
+  ctx.fill();
+
+  //Door of house
+  ctx.fillStyle = "brown";
+  ctx.fillRect(375, 330, 50, 70);
+
+  // Left window
+  ctx.fillStyle = "lightblue";
+  ctx.fillRect(315, 270, 60, 50);
+
+  // Right window
+  ctx.fillStyle = "lightblue";
+  ctx.fillRect(425, 270, 60, 50);
 }
 
 
