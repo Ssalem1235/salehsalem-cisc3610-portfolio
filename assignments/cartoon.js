@@ -43,6 +43,25 @@ window.onload = function() {
   // Right window
   ctx.fillStyle = "lightblue";
   ctx.fillRect(425, 270, 60, 50);
+
+  // Grass tufts using for loop with translate
+  for (let i = 0; i < 15; i++) {
+    ctx.save();
+    ctx.translate(30 + i * 52, 400);
+
+    // Draw one grass tuft
+    ctx.beginPath();
+    ctx.moveTo(0,0);
+    ctx.lineTo(-8, -20);
+    ctx.moveTo(0,0);
+    ctx.lineTo(0, -25);
+    ctx.moveTo(0,0);
+    ctx.lineTo(8, -20);
+    ctx.strokeStyle = "darkGreen";
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.restore();
 }
 
 
