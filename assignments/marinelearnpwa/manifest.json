@@ -1,0 +1,16 @@
+{
+  "name": "Marine Life Explorer",
+  "short_name": "MarineLife",
+  "description": "An educational app to learn about marine life.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#006994",
+  "theme_color": "#006994",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
