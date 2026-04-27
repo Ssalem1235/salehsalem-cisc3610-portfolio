@@ -1,0 +1,34 @@
+{
+  "marineLife": [
+    {
+      "title": "Octopus",
+      "description": "The octopus is one of the most intelligent creatures in the ocean. It has eight arms lined with suckers, three hearts, and can change color instantly to camouflage itself from predators.",
+      "image": "images/octopus.jpg",
+      "audio": "audio/octopus.mp3"
+    },
+    {
+      "title": "Blue Whale",
+      "description": "The blue whale is the largest animal ever known to have existed on Earth. It can grow up to 100 feet long and communicate with other whales using deep, powerful sounds that travel hundreds of miles underwater.",
+      "image": "images/bluewhale.jpeg",
+      "audio": "audio/bluewhale.mp3"
+    },
+    {
+      "title": "Clownfish",
+      "description": "The clownfish is a small, brightly colored fish famous for living among the stinging tentacles of sea anemones. It is immune to the anemone's sting and uses it as shelter and protection from predators.",
+      "image": "images/clownfish.jpg",
+      "audio": "audio/clownfish.mp3"
+    },
+    {
+      "title": "Jellyfish",
+      "description": "Jellyfish are ancient sea creatures that have existed for over 500 million years — long before dinosaurs. They have no brain, heart, or bones, and move by pulsing their bell-shaped bodies through the water.",
+      "image": "images/jellyfish.jpg",
+      "audio": "audio/jellyfish.mp3"
+    },
+    {
+      "title": "Sea Anemone",
+      "description": "Sea anemones are predatory animals that look like underwater flowers. They attach themselves to rocks and use their colorful tentacles to sting and capture small fish and plankton.",
+      "image": "images/anemone.jpg",
+      "audio": "audio/anemone.mp3"
+    }
+  ]
+}
