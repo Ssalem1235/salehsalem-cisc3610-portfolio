@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marine Life Explorer - Documentation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🌊 Marine Life Explorer</h1>
+    <p>Documentation</p>
+  </header>
+
+  <main>
+
+    <div class="card" style="margin-bottom: 24px;">
+      <h2>App Overview</h2>
+      <p>Marine Life Explorer is an educational Progressive Web App built with
+      HTML5, CSS, and JavaScript. It allows users to learn about ocean creatures
+      through images, descriptions, and audio clips. The app can be installed on
+      any device and works offline.</p>
+    </div>
+
+    <div class="card" style="margin-bottom: 24px;">
+      <h2>Features</h2>
+      <ul style="margin: 10px 0 0 20px; line-height: 2;">
+        <li>Dropdown menu dynamically populated from a JSON file</li>
+        <li>Displays image, description, and audio for each animal</li>
+        <li>Installable on desktop and mobile devices</li>
+        <li>Works offline using a service worker</li>
+        <li>Responsive design that works on all screen sizes</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-bottom: 24px;">
+      <h2>File Structure</h2>
+      <ul style="margin: 10px 0 0 20px; line-height: 2;">
+        <li><strong>index.html</strong> — Main app page</li>
+        <li><strong>style.css</strong> — All styling for the app</li>
+        <li><strong>app.js</strong> — JavaScript that loads JSON and powers the app</li>
+        <li><strong>data.json</strong> — Stores all animal data</li>
+        <li><strong>manifest.json</strong> — Makes the app installable</li>
+        <li><strong>sw.js</strong> — Service worker for offline functionality</li>
+        <li><strong>images/</strong> — All animal images</li>
+        <li><strong>audio/</strong> — All animal audio files</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-bottom: 24px;">
+      <h2>How to Modify the JSON File</h2>
+      <p>To add a new animal to the app, open <strong>data.json</strong> and add
+      a new entry inside the <strong>marineLife</strong> array following this
+      format:</p>
+      <br>
+      <pre style="background:#e0f2f7; padding:14px; border-radius:8px; font-size:0.9rem; line-height:1.6;">
+{
+  "title": "Animal Name",
+  "description": "Write a description of the animal here.",
+  "image": "images/yourimage.jpg",
+  "audio": "audio/youraudio.mp3"
+}</pre>
+      <br>
+      <p>Then upload the matching image to the <strong>images/</strong> folder
+      and the audio file to the <strong>audio/</strong> folder. The app will
+      automatically show the new animal in the dropdown menu.</p>
+    </div>
+
+    <div class="card">
+      <h2>Installation Instructions</h2>
+      <p>For full installation instructions visit the
+      <a href="promo.html" style="color:#006994;">Promotional Page</a>.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Marine Life Explorer | CISC 3610</p>
+  </footer>
+
+</body>
+</html>
