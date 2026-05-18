@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marine Life Explorer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: Arial, sans-serif; }
+
+    .hero {
+      background-color: #006994;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 { font-size: 2.5rem; font-weight: bold; }
+    .hero p { font-size: 1.1rem; margin-top: 8px; }
+
+    .section { padding: 50px 0; }
+    .section h2 {
+      font-weight: bold;
+      border-bottom: 3px solid #006994;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .launch-section {
+      background-color: #006994;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .launch-section h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .btn-launch {
+      background-color: white;
+      color: #006994;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 14px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn-launch:hover {
+      background-color: #e0f2f7;
+      color: #006994;
+    }
+
+    footer {
+      background-color: #212529;
+      color: #adb5bd;
+      text-align: center;
+      padding: 20px;
+    }
+
+    pre {
+      background: #e0f2f7;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>🌊 Marine Life Explorer</h1>
+    <p>An educational Progressive Web App about ocean creatures</p>
+    <p>CISC 3610 | Saleh Salem</p>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
+      <h2>About the App</h2>
+      <p class="lead">Marine Life Explorer is an educational Progressive Web App (PWA) built with HTML5, CSS, and JavaScript. It allows users to learn about fascinating ocean creatures through images, descriptions, and audio clips. The app can be installed on any device and works offline thanks to a service worker.</p>
+
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <div class="card p-4 text-center">
+            <h3>🐙</h3>
+            <h5>5 Marine Animals</h5>
+            <p>Octopus, Blue Whale, Clownfish, Jellyfish, Sea Anemone</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-4 text-center">
+            <h3>🔊</h3>
+            <h5>Audio Descriptions</h5>
+            <p>Each animal has a spoken audio description you can play</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-4 text-center">
+            <h3>📱</h3>
+            <h5>Installable PWA</h5>
+            <p>Install on your phone or desktop and use it offline</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="section" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2>Screenshots</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <img src="marinelearnpwa/screenshot1.png" alt="App Screenshot 1" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="marinelearnpwa/screenshot2.png" alt="App Screenshot 2" class="img-fluid rounded shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO INSTALL -->
+  <section class="section">
+    <div class="container">
+      <h2>How to Install</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card p-4">
+            <h5>💻 On Desktop (Chrome)</h5>
+            <ol style="line-height: 2; margin-top: 10px;">
+              <li>Open the app in Google Chrome</li>
+              <li>Look for the install icon in the address bar (a computer with a + sign)</li>
+              <li>Click it and select <strong>Install</strong></li>
+              <li>The app opens as its own window on your computer</li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card p-4">
+            <h5>📱 On Mobile (Android / iPhone)</h5>
+            <ol style="line-height: 2; margin-top: 10px;">
+              <li>Open the app in your mobile browser</li>
+              <li>Tap the browser menu (three dots or share icon)</li>
+              <li>Select <strong>Add to Home Screen</strong></li>
+              <li>The app icon will appear on your home screen</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTATION -->
+  <section class="section" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2>Documentation</h2>
+
+      <div class="card p-4 mb-4">
+        <h5>File Structure</h5>
+        <ul style="line-height: 2; margin-top: 10px;">
+          <li><strong>index.html</strong> — Main app page</li>
+          <li><strong>style.css</strong> — All styling for the app</li>
+          <li><strong>app.js</strong> — JavaScript that loads the JSON and powers the app</li>
+          <li><strong>data.json</strong> — Stores all animal data (title, description, image, audio)</li>
+          <li><strong>manifest.json</strong> — Makes the app installable as a PWA</li>
+          <li><strong>sw.js</strong> — Service worker that enables offline functionality</li>
+          <li><strong>images/</strong> — All animal images</li>
+          <li><strong>audio/</strong> — All animal audio files</li>
+        </ul>
+      </div>
+
+      <div class="card p-4 mb-4">
+        <h5>How to Add a New Animal</h5>
+        <p>To add a new animal to the app, open <strong>data.json</strong> and add a new entry inside the <strong>marineLife</strong> array following this format:</p>
+        <pre>{
+  "title": "Animal Name",
+  "description": "Write a description of the animal here.",
+  "image": "images/yourimage.jpg",
+  "audio": "audio/youraudio.mp3"
+}</pre>
+        <p class="mt-3">Then upload the matching image to the <strong>images/</strong> folder and the audio file to the <strong>audio/</strong> folder. The app will automatically show the new animal in the dropdown menu.</p>
+      </div>
+
+      <div class="card p-4">
+        <h5>Technologies Used</h5>
+        <ul style="line-height: 2; margin-top: 10px;">
+          <li><strong>HTML5</strong> — Structure and layout</li>
+          <li><strong>CSS3</strong> — Styling and responsive design</li>
+          <li><strong>JavaScript</strong> — App logic and dynamic content loading</li>
+          <li><strong>JSON</strong> — Data storage for animal content</li>
+          <li><strong>Web App Manifest</strong> — Enables installation on devices</li>
+          <li><strong>Service Worker</strong> — Enables offline functionality</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAUNCH -->
+  <div class="launch-section">
+    <h2>Ready to Explore?</h2>
+    <p>Click below to launch Marine Life Explorer and start learning about ocean creatures.</p>
+    <a href="marinelearnpwa/index.html" class="btn-launch">🌊 Launch Marine Life Explorer</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Marine Life Explorer | CISC 3610 | Saleh Salem</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
